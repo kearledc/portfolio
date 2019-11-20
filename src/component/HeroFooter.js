@@ -39,10 +39,10 @@ const HeroFooter = (props) => {
 					About Me
 				</Tabs.Tab>
 				<Tabs.Tab onClick={projectClick} active={visible && projectVisible ? true:false}>
-					Projects
+					<i class="fas fa-project-diagram"></i>Projects
 				</Tabs.Tab>
 				<Tabs.Tab onClick={contactClick} active={visible && contactVisible ? true:false}>
-					Contact Me
+					<i class="fas fa-book-reader"></i> Contact Me
 				</Tabs.Tab>
 			</Tabs>
 		</Hero.Footer>

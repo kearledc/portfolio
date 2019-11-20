@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -47,7 +52,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  transform: translateY(-10%);
 }
 
 .proj {
@@ -63,10 +67,11 @@
   border-radius: 40px;
   /*background-image: linear-gradient(to right, #fff2f1, #a09be7);*/
   background-color: #fff2f1;
+  transform: translateY(-15%);
 }
 
 .proj:hover {
-  transform: scale(1.03);
+  /*transform: scale(1.03);*/
   box-shadow: 0 10px 30px 10px;
 }
 
@@ -122,4 +127,8 @@
 
 .proj h4 {
   margin-top: 1em;
+}
+
+i {
+  margin-right: 0.3em;
 }
