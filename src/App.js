@@ -63,14 +63,10 @@ function App() {
   else if(showComponent === "projects"){
     return (
       <div>
-        <Hero size="fullheight" color="primary" gradient>
-          <HeroFooter about={aboutClick} projects={projectClick} contact={contactClick}/>  
-          <Hero.Body>
-              <Projects />
-          </Hero.Body>
-           
-      
+        <Hero color="primary">
+          <HeroFooter about={aboutClick} projects={projectClick} contact={contactClick}/>     
         </Hero>
+        <Projects />  
       </div>
     );
   }
