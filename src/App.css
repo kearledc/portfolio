@@ -22,5 +22,10 @@
 }
 
 * {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
+}
+
+#gmap {
+  height: 100%;
+  width: 100%;
 }

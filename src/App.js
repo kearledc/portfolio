@@ -26,7 +26,7 @@ function App() {
   }
 
   const projectClick = () => {
-    setComponent('project')
+    setComponent('projects')
   }
 
   
@@ -34,10 +34,12 @@ function App() {
     return (
       <div>
         <Hero size="fullheight" color="info" gradient>
+          <HeroFooter about={aboutClick} projects={projectClick} contact={contactClick}/>
           <Hero.Body>
               <About />              
           </Hero.Body>
-          <HeroFooter />   
+             
+        {/* yung about={aboutClick} <- rinereference natin yung aboutclick sa herofooter.js same din yan sa projects and contact*/}
         </Hero>
       </div>
     );
@@ -47,11 +49,11 @@ function App() {
     return (
       <div>
         <Hero size="fullheight" color="dark" gradient>
-         
+          <HeroFooter about={aboutClick} projects={projectClick} contact={contactClick}/>  
           <Hero.Body>         
               <Contact />           
           </Hero.Body>
-          <HeroFooter />   
+           
           
         </Hero>
       </div>
@@ -62,10 +64,11 @@ function App() {
     return (
       <div>
         <Hero size="fullheight" color="primary" gradient>
+          <HeroFooter about={aboutClick} projects={projectClick} contact={contactClick}/>  
           <Hero.Body>
               <Projects />
           </Hero.Body>
-          <HeroFooter />   
+           
       
         </Hero>
       </div>

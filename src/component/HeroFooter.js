@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { Hero, Tabs } from 'react-bulma-components'
 
-const HeroFooter = () => {
+const HeroFooter = (props) => {
+	console.log(props)
 	const [visible, setVisible] = useState(false)
 	const [aboutVisible, setAbout] = useState(false);
 	const [projectVisible, setProject] = useState(false);
@@ -12,6 +13,7 @@ const HeroFooter = () => {
 		setProject(false)
 		setContact(false)
 		setVisible(true)
+		props.about();  // gamit ang props rineference natin yung about mula sa HeadFooter sa App.js
 	}
 
 	const projectClick = () => {
@@ -19,6 +21,7 @@ const HeroFooter = () => {
 		setAbout(false)
 		setContact(false)
 		setVisible(true)
+		props.projects();
 	}
 
 	const contactClick = () => {
@@ -26,6 +29,7 @@ const HeroFooter = () => {
 		setProject(false)
 		setAbout(false)
 		setVisible(true)
+		props.contact();
 	}
 
 	return(
@@ -38,7 +42,7 @@ const HeroFooter = () => {
 					Projects
 				</Tabs.Tab>
 				<Tabs.Tab onClick={contactClick} active={visible && contactVisible ? true:false}>
-					Contact
+					Contact Me
 				</Tabs.Tab>
 			</Tabs>
 		</Hero.Footer>
