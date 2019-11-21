@@ -89,7 +89,7 @@ function App() {
               Web Developer Portfolio
             </Heading>
 
-            <p>Liit nito nabasa mo pa? Hire me Please</p>
+            <p className="smallFont">Liit nito nabasa mo pa? Hire me Please</p>
           </Container>
         </Hero.Body>
       </div>

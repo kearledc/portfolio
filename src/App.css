@@ -247,3 +247,7 @@ i {
   background-attachment: fixed;
   height: 100vh;
 }
+
+.smallFont {
+  margin-top: 40em;
+}
